@@ -243,10 +243,14 @@ code { font-family: var(--font-mono); font-size: .9em; }
 }
 .site-header.is-scrolled { border-bottom-color: var(--border); }
 
+/* En-tête un peu plus large que les autres sections : laisse respirer la nav
+   FR (libellés plus longs qu'en anglais) à côté des actions (CV, langue, thème). */
+.site-header .container { max-width: 1280px; }
+
 .header-inner {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: var(--space-5);
   height: var(--header-h);
 }
 
@@ -273,7 +277,7 @@ code { font-family: var(--font-mono); font-size: .9em; }
   box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--cyan) 70%, transparent);
 }
 
-.site-nav ul { display: flex; gap: var(--space-1); }
+.site-nav ul { display: flex; gap: var(--space-2); }
 .site-nav a {
   display: block;
   padding: .45rem .7rem;
@@ -288,6 +292,39 @@ code { font-family: var(--font-mono); font-size: .9em; }
 .site-nav a.is-active { color: var(--accent); background: var(--accent-soft); }
 
 .header-actions { display: flex; align-items: center; gap: var(--space-2); }
+
+/* Sélecteur de langue FR / EN */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  height: 42px;
+  padding: 3px;
+  gap: 2px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.lang-btn {
+  display: inline-grid;
+  place-items: center;
+  height: 100%;
+  min-width: 34px;
+  padding-inline: .5rem;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-muted);
+  font: inherit;
+  font-family: var(--font-mono);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease;
+}
+.lang-btn:hover { color: var(--text); }
+.lang-btn[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
 
 /* Icône soleil/lune selon le thème actif */
 .theme-toggle .icon-sun { display: none; }
@@ -994,6 +1031,7 @@ a.contact-item:hover { border-color: var(--accent); color: var(--text); transfor
   .header-cv span { display: none; }
   .header-cv { width: 42px; height: 42px; min-height: 0; padding: 0; }
   .brand-name { display: none; }
+  .lang-btn { min-width: 28px; padding-inline: .35rem; font-size: .7rem; }
   .hero-visual { width: min(100%, 300px); }
   .portrait { width: 78%; margin-inline: auto; }
   .console { position: relative; left: auto; bottom: auto; width: 100%; margin-top: -1.25rem; }
