@@ -34,7 +34,7 @@ window.I18N = {
 
     "hero.statusPill": "Disponible dès début janvier 2027 · Stage PFE / pré-embauche",
     "hero.roleLabel": "Analyste SOC / Blue Team en devenir",
-    "hero.lead": "Élève ingénieur en 5ᵉ année de cybersécurité à l'UIR.<br>\n            Mon fil conducteur&nbsp;: la\n            <strong>défense opérationnelle</strong> — analyser des logs, qualifier des alertes,\n            distinguer le faux positif de la vraie menace, durcir des systèmes et documenter rigoureusement.",
+    "hero.lead": "Élève ingénieur en 5ᵉ année de cybersécurité à l'UIR,<br>\n            orienté défense opérationnelle (SOC / Blue Team).<br>\n            Mon objectif : détecter rapidement les cyberattaques, investiguer les comportements suspects, qualifier les alertes, identifier les menaces réelles et contribuer à la réponse aux incidents.<br>\n            J’accorde une importance particulière à la détection des menaces, au durcissement des systèmes et à la rigueur de l’investigation.",
     "hero.ctaProjects": "Voir mes projets",
     "hero.ctaContact": "Me contacter",
     "hero.cvBtn": "CV (PDF)",
@@ -271,7 +271,7 @@ window.I18N = {
 
     "hero.statusPill": "Available from early January 2027 · Final-year internship / pre-hire",
     "hero.roleLabel": "Aspiring SOC Analyst / Blue Team",
-    "hero.lead": "Final-year engineering student (5th year) in cybersecurity at UIR.<br>\n            My common thread&nbsp;: <strong>operational defense</strong> — analyzing logs, triaging alerts,\n            telling false positives from real threats, hardening systems, and documenting rigorously.",
+    "hero.lead": "Final-year engineering student (5th year) in cybersecurity at UIR,<br>\n            focused on operational defense (SOC / Blue Team).<br>\n            My goal: quickly detect cyberattacks, investigate suspicious behavior, triage alerts, identify real threats, and contribute to incident response.<br>\n            I place particular emphasis on threat detection, system hardening, and investigative rigor.",
     "hero.ctaProjects": "View my projects",
     "hero.ctaContact": "Contact me",
     "hero.cvBtn": "Resume (PDF)",
